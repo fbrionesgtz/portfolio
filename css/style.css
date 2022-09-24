@@ -428,6 +428,7 @@ textarea {
 }
 
 .projects__row-img {
+    position: relative;
     width: 100%;
     display: block;
     object-fit: cover;
@@ -435,12 +436,20 @@ textarea {
 
 .projects__row-gif {
     position: absolute;
-    top: 38%;
+    top: 9%;
     left: 50%;
-    transform: translate(-50%, -38%);
-    width: 71%;
-    height: 75%;
-    object-fit: fill;
+    transform: translateX(-50%);
+    width: 72%;
+    height: 76%;
+}
+
+.projects__row-gif_secondhand {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 72%;
+    height: 70%;
 }
 
 .projects__row-content {
@@ -454,6 +463,15 @@ textarea {
 @media only screen and (max-width: 56.25em) {
     .projects__row-content {
         align-items: center;
+    }
+
+    .projects__row-gif_secondhand {
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 72%;
+        height: 76%;
     }
 }
 
